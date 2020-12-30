@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Stu(uname, id, sex, grade) {
+        this.uname = uname
+        this.id = id
+        this.sex = sex
+        this.grade = grade
+        this.sayHi = function () {
+          alert(`你好,我是${this.uname}`)
+        }
+      }
+      var jerry = new Stu('jerry', 1, '男', 3)
+      console.log(jerry.sayHi())
+      for (var k in jerry) {
+        //var 不要写掉了
+        console.log(k, jerry[k])
+      }
+    </script>
+  </body>
+</html>

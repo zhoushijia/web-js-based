@@ -1,0 +1,93 @@
+/* html body 都设置100%保证整个屏幕随着浏览器窗口的变化而变化*/
+html {
+  height: 100%;
+}
+body {
+  /* 如果标题上加margin-top,这里就得加overflow: hidden;防止盒子塌陷 */
+  /* overflow: hidden; */
+  margin: 0 auto;
+  min-width: 5rem;
+  width: 10rem;
+  font-family: 'FZLTCXHJW--GB1-0';
+  background: -webkit-linear-gradient(top left, #6cc9b6, #3978ca);
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+/* 如果屏幕尺寸超过了640px，则将html的字体限制在640尺寸的字体大小 */
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 64px !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-weight: normal;
+  margin: 0;
+}
+input {
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.welcome {
+  /* margin-top: 4.672rem; */
+  padding-top: 4.672rem;
+  text-align: center;
+  font-size: 1.406rem;
+  color: #fff;
+  font-family: 'HelveticaNeueLTPro-Lt';
+  /* box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.36); */
+}
+input {
+  display: block;
+  margin: 0 auto;
+  padding-left: 0.563rem;
+  width: 7.344rem;
+  height: 1.188rem;
+  border: 1px solid #fff;
+  border-radius: 0.594rem;
+  font-size: 0.406rem;
+  background-color: transparent;
+}
+input::placeholder {
+  color: #fff;
+}
+
+.user {
+  margin-top: 2.016rem;
+}
+.psd {
+  margin-top: 0.484rem;
+}
+.login {
+  margin-top: 0.484rem;
+  padding: 0;
+  background-color: #56b3f5;
+  text-align: center;
+  line-height: 1.188rem;
+  color: #fff;
+  font-size: 0.5rem;
+  border: none;
+}
+.tips {
+  margin-top: 0.297rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0.328rem;
+}
+.tips span {
+  margin: 0 0.156rem;
+  color: #fff;
+}

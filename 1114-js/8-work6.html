@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var score = prompt('请输入分数：')
+      if (score > 100 || score < 0 || score !== null || score !== '') {
+        alert('输入分数无效')
+      } else if (score >= 90) {
+        alert('A')
+      } else if (score >= 80) {
+        alert('B')
+      } else if (score >= 70) {
+        alert('C')
+      } else if (score >= 60) {
+        alert('D')
+      } else {
+        alert('E')
+      }
+      // if (score > 100 || score < 0 || score !== null || score !== '') {
+      //   alert('输入分数无效')
+      // } else {
+      //   switch (parseInt(score / 10)) {
+      //     case 10:
+      //     case 9:
+      //       alert('A')
+      //       break
+      //     case 8:
+      //       alert('B')
+      //       break
+      //     case 7:
+      //       alert('C')
+      //       break
+      //     case 6:
+      //       alert('D')
+      //       break
+      //     default:
+      //       alert('E')
+      //   }
+      // }
+    </script>
+  </body>
+</html>

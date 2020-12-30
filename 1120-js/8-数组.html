@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            pop() push() reverse() shift() unshift() splice() sort() 都会改变原数组
+            shift() 删除第一个元素 并返回第一个元素值
+            unshift() 添加第一个元素值 返回数组长度
+        */
+      var arr = new Array(3)
+      arr[0] = 'George'
+      arr[1] = 'John'
+      arr[2] = 'Thomas'
+
+      document.write(arr + '<br />')
+      document.write(arr.reverse() + '<br />') //  改变原数组
+      document.write(arr + '<br />') //  Thomas,John,George
+      document.write(arr.slice(0, 2) + '<br>') //  Thomas,John  不改变原数组
+      document.write(arr.splice(1, 1, 'Tom', 'Jerry') + '<br>') // John  改变原数组
+      document.write(arr) //    Thomas,Tom,Jerry,George
+      document.write(arr.shift() + '<br />') // Thomas
+      document.write(arr + '<br />') //  Tom,Jerry,George
+      document.write(arr.sort()) //    George,Jerry,Tom
+      console.log(arr)
+      console.log(arr.toString())
+
+      var num = [122, 3232, 4, 6, 1433, 15]
+      console.log(num.sort()) //  按字符串顺序排列
+      function sortNum(a, b) {
+        return a - b
+      }
+      console.log(num.sort(sortNum))
+      console.log(num.indexOf(1)) //获取索引
+    </script>
+  </body>
+</html>

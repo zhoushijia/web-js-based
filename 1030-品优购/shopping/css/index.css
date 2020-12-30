@@ -1,0 +1,403 @@
+/* 首页样式文件 */
+
+/* 主题栏 */
+
+.main {
+  height: 465px;
+}
+
+.focus {
+  margin-top: 10px;
+  margin-left: 219px;
+  width: 721px;
+  height: 455px;
+}
+
+.focus img {
+  width: 100%;
+}
+
+.newflash {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 250px;
+  height: 455px;
+}
+
+.new {
+  height: 165px;
+  border: 1px solid #e4e4e4;
+}
+
+.new .new_hd {
+  padding: 0 15px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  border-bottom: 1px dotted #e4e4e4;
+}
+
+.new .new_hd h4 {
+  float: left;
+}
+
+.new .new_hd .more {
+  float: right;
+}
+
+.new .new_bd {
+  padding-left: 15px;
+  padding-top: 6px;
+  line-height: 24px;
+  font-size: 12px;
+  font-family: 'simsun';
+}
+
+.lifeservice {
+  height: 210px;
+  margin-left: 1px;
+}
+
+.lifeservice ul > li {
+  float: left;
+  width: 64px;
+  height: 72px;
+  border: 1px solid #e4e4e4;
+  margin-left: -1px;
+  margin-top: -1px;
+  text-align: center;
+}
+
+.lifeservice ul li:nth-child(4n) {
+  width: 61px;
+}
+
+.lifeservice ul li a div {
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-bottom: 6px;
+  width: 23px;
+  height: 26px;
+  background: url(../images/icons.png) no-repeat -17px -15px;
+}
+
+.fasion_adv {
+  margin-top: 5px;
+}
+
+/* 主题栏 */
+
+/* 推荐栏 */
+
+.suggest {
+  margin-top: 11px;
+  height: 163px;
+}
+
+.timer {
+  width: 206px;
+  height: 100%;
+  background-color: #5c5251;
+}
+
+.timer .icon-shizhong {
+  margin-top: 31px;
+  margin-left: 68px;
+  display: block;
+  font-size: 57px;
+  color: #fff;
+  line-height: 57px;
+}
+
+.timer h4 {
+  margin-left: 61px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 21px;
+}
+
+.goods {
+  /* position: relative; */
+  width: 994px;
+  height: 100%;
+  background-color: #ebebeb;
+}
+
+.goods ul > li {
+  position: relative;
+  float: left;
+  width: 248px;
+  height: 100%;
+}
+
+/* 伪元素实现右边实线，采用定位 */
+
+.goods ul li:nth-child(-n + 3)::after {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 1px;
+  height: 143px;
+  background-color: #dddddd;
+  content: '';
+}
+
+.goods ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 推荐栏 */
+
+/* 猜你喜欢 */
+
+.like_hd {
+  margin-top: 21px;
+  height: 38px;
+  line-height: 38px;
+}
+
+.like_hd h4 {
+  float: left;
+  font-size: 18px;
+}
+
+.like_hd a {
+  float: right;
+  margin-right: 21px;
+}
+.like_hd a .icon-shuaxinzhongjieban {
+  font-size: 12px;
+  padding-left: 8px;
+}
+.like_bd {
+  height: 233px;
+  border: 1px solid #ededed;
+}
+
+.like_bd li {
+  float: left;
+  width: 200px;
+  line-height: 21px;
+}
+
+.like_bd li:last-child {
+  width: 198px;
+}
+
+.like_bd li a {
+  display: block;
+}
+.like_bd li a .img {
+  text-align: center;
+}
+.like_bd li a .img img {
+  width: 142px;
+  height: 142px;
+}
+
+.like_bd li a .img_desc {
+  margin-top: 9px;
+  padding-left: 36px;
+  height: 62px;
+  border-right: 1px solid #ededed;
+}
+
+.like_bd li:last-child a .img_desc {
+  border-right: none;
+}
+
+.like_bd li a .img_desc div:last-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: #df3033;
+}
+
+/* 猜你喜欢 */
+/* 有趣区 */
+.interest {
+  margin-top: 21px;
+}
+.interest_hd {
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  color: #333;
+}
+.interest_bd {
+  height: 407px;
+  border: 1px solid #333;
+  border-left: none;
+}
+.interest_bd div {
+  float: left;
+  height: 405px;
+}
+.interest404 {
+  width: 404px;
+}
+.interest226 {
+  width: 226px;
+  border-right: 1px solid #333;
+}
+.interest226 h4 {
+  height: 40px;
+  width: 191px;
+  margin: 0 auto;
+  border-bottom: 1px dashed #333;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+.interest226 div:first-of-type {
+  height: 206px;
+  border-bottom: 1px solid #333;
+}
+.interest226 div:last-of-type {
+  height: 159px;
+}
+.interest405 {
+  width: 405px;
+  border-right: 1px solid #333;
+  background-color: #ededed;
+}
+.interest405 h4 {
+  width: 365px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  border-bottom: 1px dashed #333;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+}
+.interest405 div:first-of-type {
+  height: 206px;
+  border-bottom: 1px solid #333;
+}
+.interest405 div:last-of-type div {
+  float: left;
+  height: 159px;
+}
+.interest405 div:last-of-type div:first-child {
+  width: 202px;
+  border-right: 1px solid #333;
+}
+.interest405 div:last-of-type div:last-child {
+  width: 202px;
+}
+.interest164 {
+  width: 164px;
+  padding-left: 10px;
+  padding-top: 14px;
+}
+.interest164 li {
+  float: left;
+  width: 77px;
+  height: 57px;
+  border-right: 1px dashed #333;
+  border-bottom: 1px dashed #333;
+  text-align: center;
+}
+.interest164 li:nth-child(2n) {
+  border-right: none;
+}
+.interest164 li:nth-child(n + 13) {
+  border-bottom: none;
+}
+.interest164 li:nth-child(-n + 2) {
+  height: 45px;
+}
+.interest164 li a img {
+  width: 95%;
+}
+/* 有趣区 */
+/* 楼层区 */
+.jiadian_hd {
+  margin-top: 21px;
+  border-bottom: 2px solid #c81623;
+  line-height: 38px;
+}
+.jiadian_hd h4 {
+  float: left;
+  height: 38px;
+  font-size: 18px;
+  color: #c81623;
+}
+.jiadian_hd div {
+  float: right;
+}
+.jiadian_hd div li {
+  float: left;
+}
+.jiadian_hd div li a {
+  font-size: 12px;
+  font-family: 'simsun';
+  padding: 0 15px;
+}
+.jiadian_bd {
+  height: 360px;
+  background-color: #f9f9f9;
+}
+.jiadian_bd > div {
+  float: left;
+}
+.jiadian_bd .w209 {
+  width: 209px;
+  text-align: center;
+}
+.jiadian_bd .w209 div li {
+  float: left;
+  width: 86px;
+  height: 32px;
+  margin-left: 13px;
+  border-bottom: 1px dashed #333;
+  line-height: 32px;
+}
+.jiadian_bd .w209 div:last-child {
+  height: 227px;
+  margin-top: 20px;
+}
+.jiadian_bd .w329 {
+  width: 329px;
+  height: 360px;
+}
+.jiadian_bd .w219 {
+  width: 219px;
+  border-right: 1px solid #333;
+}
+.jiadian_bd .w219 div:first-child {
+  border-bottom: 1px solid #333;
+}
+.jiadian_bd .w221 {
+  width: 221px;
+  border-right: 1px solid #333;
+}
+.jiadian_bd .w222 {
+  width: 222px;
+  border-right: 1px solid #333;
+}
+.jiadian_bd .w222 div:first-child {
+  border-bottom: 1px solid #333;
+}
+.jiadian_ft {
+  height: 66px;
+  margin-top: 20px;
+  background-color: #f7f7f7;
+}
+.jiadian_ft ul li {
+  float: left;
+  height: 66px;
+  width: 120px;
+}
+.jiadian_ft ul li a {
+  display: block;
+  margin: 13px auto;
+  border-right: 1px dashed #333;
+}
+.jiadian_ft ul li:last-child a {
+  border-right: none;
+}
+/* 楼层区 */

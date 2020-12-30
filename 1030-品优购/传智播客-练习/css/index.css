@@ -1,0 +1,32 @@
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.shortcut {
+  height: 40px;
+  background-color: #055c92;
+  line-height: 40px;
+  color: #fff;
+}
+.shortcut .w .shortcut-lf {
+  float: left;
+}
+.shortcut .w .shortcut-lf a {
+  color: #fff;
+}
+.shortcut .w .shortcut-lf a:hover {
+  color: skyblue;
+}
+.shortcut .w .shortcut-rt {
+  float: right;
+}
+.shortcut .w .shortcut-rt a {
+  color: #fff;
+}
+.shortcut .w .shortcut-rt a:hover {
+  color: skyblue;
+}
+.header {
+  height: 114px;
+  background-color: red;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 简易计算器
+      function operat(num1, num2, op) {
+        var res = 0
+        var opt = ''
+        switch (select) {
+          case 1:
+            res = num1 + num2
+            opt = '+'
+            break
+          case 2:
+            res = num1 - num2
+            opt = '-'
+            break
+          case 3:
+            res = num1 * num2
+            opt = '*'
+            break
+          case 4:
+            res = num1 / num2
+            opt = '/'
+            break
+          // case 5:
+          //   flag = false
+          //   res = '退出成功'
+          //   break
+        }
+        return num1 + opt + num2 + '=' + res
+      }
+
+      do {
+        var select = +prompt('欢迎使用简易计算器：\n 1.加法运算 \n 2.减法运算 \n 3.乘法运算 \n 4.除法运算 \n 5.退出 \n 请输入您的选项：')
+        if (select === 5) {
+          alert('退出成功')
+          break
+        }
+        var num1 = +prompt('请输入第一个数字：')
+        var num2 = +prompt('请输入第二个数字：')
+        document.write(operat(num1, num2, select))
+      } while (true)
+    </script>
+  </body>
+</html>

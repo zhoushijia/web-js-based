@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var num = [1, 2, 3, 5, '白日']
+      var num_other = new Array()
+      console.log(num)
+      console.log(num_other)
+      for (var i = 0; i < num.length; i++) {
+        console.log(num[i])
+        num_other[i] = num[i]
+      }
+      console.log(num_other)
+
+      var week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'] // moneday tuesday wenesday
+      var myDate = new Date()
+      var day = myDate.getDay()
+      console.log(week[day])
+      for (var i = 0; i < week.length; i++) {
+        console.log(week[i])
+      }
+    </script>
+  </body>
+</html>

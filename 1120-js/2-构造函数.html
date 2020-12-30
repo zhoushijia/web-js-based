@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Hero(uname, type, blood) {
+        this.uname = uname
+        this.type = type
+        this.blood = blood
+        this.attack = function (a) {
+          alert(`${this.uname}采用${a}攻击`)
+        }
+      }
+      var hy = new Hero('后羿', '射手型', 100)
+      hy.attack('远程')
+      var lp = new Hero('廉颇', '力量型', 500)
+      lp.attack('近战')
+      for (var k in hy) {
+        console.log(k, hy[k])
+      }
+      for (var k in lp) {
+        console.log(k, lp[k])
+      }
+    </script>
+  </body>
+</html>

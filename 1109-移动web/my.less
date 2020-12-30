@@ -1,0 +1,20 @@
+// 变量的使用
+@skyblue: skyblue;
+div {
+  // 与css不同,less中后代是嵌套在父元素中
+  span {
+    color: @skyblue;
+  }
+  a {
+    color: #00f;
+    text-decoration: none;
+    // 伪类选择器/交集/伪元素选择器采用&
+    &:hover {
+      color: #f00;
+    }
+  }
+  //   less中的自带选择器写法
+  > p {
+    color: #0f0;
+  }
+}

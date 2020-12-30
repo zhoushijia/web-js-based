@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var myMath = {
+        PI: 3.141592627,
+        max: function () {
+          if (arguments.length === 0) return -Infinity
+
+          var arrMax = arguments[0]
+          for (var i = 1; i < arguments.length; i++) {
+            if (arrMax < arguments[i]) arrMax = arguments[i]
+          }
+          return arrMax
+        },
+        min: function () {
+          if (arguments.length === 0) return Infinity
+          for (var i = 0; i < arguments.length; i++) {}
+          var arrMin = arguments[0]
+          for (var i = 1; i < arguments.length; i++) {
+            if (arrMin > arguments[i]) arrMin = arguments[i]
+          }
+          return arrMin
+        }
+      }
+      console.log(myMath.max())
+      console.log(myMath.max(10, 33, 1))
+      console.log(myMath.min(10, 33, 1))
+      console.log(typeof 1)
+    </script>
+  </body>
+</html>

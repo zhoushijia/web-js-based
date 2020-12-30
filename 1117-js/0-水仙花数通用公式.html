@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 水仙花数
+      var unit
+      for (var i = 100; i < 9999; i++) {
+        var flag = i
+        var count = 0 //统计数字位数
+        var sum = 0
+        // 判断数字位数  最关键的一步
+        while (flag) {
+          flag = parseInt(flag / 10)
+          count++ //统计数字位数
+        }
+        // 通用写法 寻找水仙花树
+        for (var j = 1; j <= count; j++) {
+          unit = parseInt((i % Math.pow(10, j)) / Math.pow(10, j - 1)) // 得到每个位置的数字
+          sum += Math.pow(unit, count)
+        }
+        if (sum === i) document.write(i + '<br>') // 判断是否为水仙花数
+
+        // if (count === 3) {
+        //   unit = i % 10 / 1
+        //   decade = parseInt((i % 100) / 10)
+        //   hundred = parseInt((i % 1000) / 100)
+        //   if (Math.pow(unit, count) + Math.pow(decade, count) + Math.pow(hundred, count) === i) document.write(i + '<br />')
+        // }
+        // if (count === 4) {
+        //   unit = (i % 10) / 1
+        //   decade = parseInt((i % 100) / 10)
+        //   hundred = parseInt((i % 1000) / 100)
+        //   thousand = parseInt((i % 10000) / 1000)
+        //   if (Math.pow(unit, count) + Math.pow(decade, count) + Math.pow(hundred, count) + Math.pow(thousand, count) === i) document.write(i + '<br />')
+        // }
+      }
+    </script>
+  </body>
+</html>

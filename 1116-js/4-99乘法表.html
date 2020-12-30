@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        margin: 0 auto;
+        width: 900px;
+        border: 1px solid #333;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      tr,
+      td {
+        border: 1px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 100以内的偶数
+      for (var i = 1; i <= 100; i++) {
+        if (i % 2 === 0) console.log(i)
+      }
+      // 100以内数字的和
+      var sum = 0
+      var counter = 0
+      for (var i = 1; i <= 100; i++) {
+        if (i % 3 === 0) {
+          sum += i
+          counter++
+        }
+      }
+      console.log(sum / counter)
+
+      //学生成绩平均值
+      // var count = +prompt('请输入班级人数：')
+      // var scores = 0
+      // for (var i = 1; i <= count; i++) {
+      //   scores = +prompt(`请输入第${i}个学生成绩:`) + scores
+      // }
+      // console.log(scores / count)
+      // 99乘法表
+      var str = '<table>'
+      for (var i = 1; i <= 9; i++) {
+        str += '<tr>'
+        for (var j = 1; j <= i; j++) {
+          str += '<td>' + j + '&times;' + i + '=' + i * j + '</td>'
+        }
+        str += '</tr>'
+      }
+      str += '</table>'
+      document.write(str)
+    </script>
+  </body>
+</html>

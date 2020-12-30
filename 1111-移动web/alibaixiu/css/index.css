@@ -1,0 +1,156 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+body {
+  background-color: #f5f5f5;
+}
+.container {
+  background-color: #fff;
+}
+/* 头 */
+.row header {
+  padding-left: 0;
+}
+.logo {
+  background-color: #429ad9;
+}
+.logo a img {
+  margin: 0 auto;
+}
+/* 小屏幕以下时显示文字 */
+.logo a span {
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+/* 在小屏幕下导航栏浮动起来 */
+@media screen and (max-width: 991px) {
+  .nav ul li {
+    float: left;
+    width: 20%;
+  }
+}
+/* 在超小屏幕下文字行高缩小 */
+@media screen and (max-width: 767px) {
+  header .nav ul li a {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .news ul li:first-child {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+  .news li {
+    width: 50% !important;
+  }
+  .publish h3 {
+    font-size: 14px;
+  }
+}
+.nav {
+  border-bottom: 1px solid #ccc;
+}
+.nav ul li a {
+  display: block;
+  padding-left: 15px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #eeeeee;
+}
+
+.nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+  border-bottom: none;
+}
+.nav ul li a::before {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+/* 中间 */
+/* 新闻 */
+
+.news ul li {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 25%;
+  height: 133px;
+}
+
+.news ul li:first-child {
+  height: 266px;
+  width: 50%;
+}
+.news ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.news ul li a img {
+  width: 100%;
+  height: 100%;
+}
+.news ul li a p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+  padding: 0 10px;
+  width: 100%;
+  height: 41px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.news ul li:first-child a p {
+  line-height: 41px;
+  font-size: 20px;
+}
+.publish .row:first-child {
+  border-top: 1px solid #ccc;
+}
+.publish .row {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.publish .row .col-sm-3 img {
+  margin-top: 10px;
+}
+/* 侧边 */
+.hot {
+  margin-top: 20px;
+  padding: 0 20px;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.hot span {
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.hot p {
+  font-size: 12px;
+}

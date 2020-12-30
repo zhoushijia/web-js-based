@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: relative;
+        width: 120px;
+        height: 30px;
+        margin: 100px auto;
+        perspective: 500px;
+        transform-style: preserve-3d;
+        transition: all 1s;
+      }
+      .front,
+      .bottom {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f00;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+      }
+      .front {
+        transform: translateZ(15px);
+      }
+      .bottom {
+        background-color: #00f;
+
+        transform: rotateX(-90deg) translateZ(15px);
+      }
+      .box:hover {
+        transform: rotateX(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="front">我是谁</div>
+      <div class="bottom">我在哪</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .map {
+        position: relative;
+        margin: 0 auto;
+        width: 747px;
+        height: 617px;
+        background: #333333 url(images/map.png) no-repeat;
+      }
+      .beijing {
+        position: absolute;
+        top: 229px;
+        right: 193px;
+      }
+      .taibei {
+        top: 500px;
+        right: 80px;
+      }
+      .dot {
+        /* position: absolute;
+        top: 229px;
+        right: 193px; */
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #0099ff;
+      }
+      .beijing div[class^='pulse'] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 0 #0099ff;
+        animation: boWen 3s linear infinite;
+      }
+      .beijing .dot .pulse2 {
+        animation-delay: 1s;
+      }
+      .beijing .dot .pulse3 {
+        animation-delay: 2s;
+      }
+      @keyframes boWen {
+        0% {
+        }
+        50% {
+          width: 30px;
+          height: 30px;
+          opacity: 1;
+        }
+        100% {
+          width: 60px;
+          height: 60px;
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="map">
+      <div class="beijing">
+        <div class="dot">
+          <div class="pulse1"></div>
+          <div class="pulse2"></div>
+          <div class="pulse3"></div>
+        </div>
+      </div>
+      <div class="beijing taibei">
+        <div class="dot">
+          <div class="pulse1"></div>
+          <div class="pulse2"></div>
+          <div class="pulse3"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

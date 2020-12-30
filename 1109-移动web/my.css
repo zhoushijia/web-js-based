@@ -1,0 +1,13 @@
+div span {
+  color: skyblue;
+}
+div a {
+  color: #00f;
+  text-decoration: none;
+}
+div a:hover {
+  color: #f00;
+}
+div > p {
+  color: #0f0;
+}

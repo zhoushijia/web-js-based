@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        margin: 10px auto;
+        width: 800px;
+        height: 30px;
+        border-collapse: collapse;
+        border: 1px solid #333;
+        text-align: center;
+      }
+      tr,
+      td {
+        border: 1px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var uname = '唐三'
+      var age = 18
+      var sex = '男'
+      var height = 180
+      //   var str = '<table><tr><td>姓名</td><td>年龄</td><td>性别</td><td>身高</td></tr><tr><td>' + uname + '</td><td>' + age + '</td><td>' + sex + '</td><td>' + height + '</td></tr></table>'
+      var str = `
+                <table>
+                <tr>
+                    <td>姓名</td>
+                    <td>年龄</td>
+                    <td>性别</td>
+                    <td>身高</td>
+                </tr>
+                <tr>
+                    <td>${uname}</td>
+                    <td>${age}</td>
+                    <td>${sex}</td>
+                    <td>${height}</td>
+                </tr>
+                </table>
+      `
+      document.write(str)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 实例化Date对象
+      var now = new Date()
+      // 1. 用于获取对象的原始值
+      //   console.log(now.valueOf())
+      //   console.log(now.getTime())
+      //   // 2. 简单写可以这么做
+      //   var now = +new Date()
+      //   // 3. HTML5中提供的方法，有兼容性问题
+      //   var now = Date.now()
+      console.log(now)
+      console.log(now.getDate())
+      console.log(now.getDay())
+      console.log(now.getMonth())
+      console.log(now.getFullYear())
+      console.log(now.getHours())
+      console.log(now.getMinutes())
+      console.log(now.getSeconds())
+      console.log(now.getTime())
+      console.log(Date.now())
+    </script>
+  </body>
+</html>

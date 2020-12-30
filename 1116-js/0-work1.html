@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 鸡兔同笼
+      //   i 鸡   head-i  兔子
+      var head = +prompt('请输入脑袋总数：')
+      var foot = +prompt('请输入脚总数：')
+      for (var i = 0; i <= head; i++) {
+        if (2 * i + (head - i) * 4 === foot) {
+          console.log(`鸡的数量：${i},兔的数量：${head - i}`)
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+// 版心
+.w {
+  width: 1226px;
+  margin: 0 auto;
+}
+body {
+  background-color: #fff;
+}
+// 顶部快捷栏
+.top {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background-color: #333;
+  .w {
+    .shortcut {
+      ul {
+        li {
+          float: left;
+          a {
+            padding: 0 7px;
+            color: #b0b0b0;
+            &:hover {
+              color: #f2f2f2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 头部导航栏
+.header {
+  height: 100px;
+  .w {
+    position: relative;
+    height: 100%;
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 55px;
+      height: 55px;
+      img {
+        width: 100%;
+      }
+    }
+    .new {
+      position: absolute;
+      top: 50px;
+      left: 55px;
+      transform: translateY(-50%);
+      width: 163px;
+      height: 66px;
+    }
+    .header_nav {
+      position: absolute;
+      left: 238px;
+      top: 50%;
+      transform: translateY(-50%);
+      ul {
+        li {
+          float: left;
+          a {
+            font-size: 18px;
+            padding: 0 14px;
+          }
+        }
+      }
+    }
+  }
+}
+// banner
+.nav {
+  height: 460px;
+  .subnav {
+    float: left;
+    padding: 10px 0;
+    width: 234px;
+    background-color: #2c505f;
+    ul {
+      li {
+        float: left;
+
+        a {
+          display: block;
+          padding-left: 30px;
+          width: 234px;
+          height: 44px;
+          line-height: 44px;
+          font-size: 16px;
+          color: #fff;
+          &:hover {
+            background-color: #ff6700;
+          }
+          span {
+            float: right;
+            font-size: 20px;
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+  }
+  .banner {
+    float: left;
+    width: 990px;
+  }
+}
+// 推荐模块
+.suggest {
+  margin-top: 14px;
+  margin-bottom: 68px;
+  height: 170px;
+  .suggest-lf {
+    float: left;
+    // margin-right: 14px;
+    width: 234px;
+    img {
+      width: 100%;
+    }
+  }
+  .brand {
+    float: left;
+    ul {
+      li {
+        float: left;
+        a {
+          display: block;
+          width: 316px;
+          height: 170px;
+          margin-left: 14px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// 商品模块
+.goods {
+  padding-top: 50px;
+  padding-bottom: 66px;
+  background-color: #f5f5f5;
+  .w {
+    .goods-hd {
+      height: 60px;
+      line-height: 60px;
+      h2 {
+        float: left;
+        font-size: 24px;
+      }
+      .more {
+        float: right;
+        font-size: 16px;
+        margin-right: 30px;
+      }
+    }
+    .goods-bd {
+      height: 614px;
+      .goods-lf {
+        float: left;
+        width: 234px;
+        img {
+          width: 100%;
+        }
+      }
+      .goods-rt {
+        float: left;
+        width: 992px;
+        ul {
+          li {
+            position: relative;
+            float: left;
+            margin-left: 14px;
+            margin-bottom: 14px;
+            padding-top: 20px;
+            width: 234px;
+            height: 300px;
+            background-color: #fff;
+            &:nth-child(n + 5) {
+              margin-bottom: 0;
+            }
+            &:nth-child(1)::before,
+            &:nth-child(3)::before,
+            &:nth-child(7)::before {
+              content: '免邮费';
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 66px;
+              height: 20px;
+              font-size: 14px;
+              color: #fff;
+              background-color: #ffac13;
+              text-align: center;
+              line-height: 20px;
+            }
+            &:nth-child(7)::before {
+              content: '享9折';
+              background-color: #e53935;
+            }
+            &:nth-child(7) {
+              a {
+                span {
+                  i {
+                    font-style: normal;
+                    text-decoration: line-through;
+                    color: #ccc;
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+            a {
+              display: block;
+              text-align: center;
+              //   width: 234px;
+              img {
+                margin-bottom: 20px;
+                width: 160px;
+                height: 160px;
+                // width: 100%;
+              }
+              h3 {
+                font-size: 16px;
+              }
+              p {
+                margin-bottom: 6px;
+                line-height: 30px;
+                font-size: 14px;
+                color: #ccc;
+              }
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// footer
+.footer {
+  padding-top: 58px;
+  height: 212px;
+  .footer-lf {
+    float: left;
+    width: 978px;
+    div {
+      float: left;
+      width: 162px;
+      ul {
+        li {
+          &:first-child {
+            padding-bottom: 10px;
+            font-size: 15px;
+            font-weight: 700;
+          }
+          line-height: 30px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .footer-rt {
+    float: left;
+    width: 244px;
+    text-align: center;
+    h3 {
+      a {
+        font-size: 22px;
+        color: #ff6700;
+      }
+    }
+    p {
+      line-height: 30px;
+    }
+  }
+}
+// copyright
+.copyright {
+  height: 156px;
+  background-color: #fafafa;
+  .w {
+    .copyright-top {
+      height: 114px;
+      padding-top: 30px;
+      .logo {
+        float: left;
+        width: 55px;
+        height: 55px;
+        img {
+          width: 100%;
+        }
+      }
+      .copyright-rt {
+        float: left;
+        .us {
+          a {
+            padding: 0 5px;
+          }
+        }
+
+        p,
+        span {
+          padding-left: 5px;
+          color: #ccc;
+        }
+      }
+    }
+    .copyright-bottom {
+      text-align: center;
+    }
+  }
+}

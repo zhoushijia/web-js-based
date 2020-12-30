@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .map {
+        position: relative;
+        margin: 10px auto;
+        width: 747px;
+        height: 617px;
+        background: #333 url(media/map.png);
+      }
+      .beijing {
+        /* 不在这里定位的原因是因为：为了方便定位台北和广州的位置，再将dot和pulse的属性统一给三个地点使用就行 */
+        /* position: relative; */
+        position: absolute;
+        top: 227px;
+        right: 193px;
+        color: #fff;
+      }
+      .tb {
+        top: 500px;
+        right: 80px;
+      }
+      .dot {
+        /* 不在这里定位的原因是因为：为了方便定位台北和广州的位置，再将dot和pulse的属性统一给三个地点使用就行 */
+        /* position: absolute;
+        top: 227px;
+        right: 193px; */
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: blue;
+      }
+      .beijing div[class^='pulse'] {
+        /* 保证波纹居中，向四周扩散 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        /* 这里不能加背景,否者会遮盖效果,背景是整块 */
+        /* background-color: blue; */
+        /* 加边框，效果不好看 */
+        /* border: 2px solid blue; */
+        box-shadow: 0 0 10px blue;
+        animation: bodong 1.8s linear infinite;
+      }
+      /* .beijing .pulse3  这里这么写权重较低，不会显示 */
+      .map .beijing .pulse2 {
+        animation-delay: 0.6s;
+      }
+      /* .beijing .pulse3  这里这么写权重较低，不会显示 */
+      .map .beijing .pulse3 {
+        animation-delay: 1.2s;
+      }
+      @keyframes bodong {
+        0% {
+        }
+        70% {
+          /* 这里使用放大会放大边框，但不会放大阴影，不合适 */
+          /* transform: scale(5); */
+          width: 40px;
+          height: 40px;
+          /* 设置透明度，1表示不透明，0表示透明 */
+          opacity: 1;
+        }
+        100% {
+          width: 80px;
+          height: 80px;
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="map">
+      <div class="beijing">
+        <div class="dot"></div>
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="pulse3"></div>
+      </div>
+      <div class="beijing tb">
+        <div class="dot"></div>
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="pulse3"></div>
+      </div>
+    </div>
+  </body>
+</html>

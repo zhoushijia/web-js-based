@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 冒泡排序bubbleSort
+      var num = [121, 2131, 43, 454, 1, 777, 2]
+      for (var i = 0; i < num.length - 1; i++) {
+        for (var j = 0; j < num.length - i - 1; j++) {
+          if (num[j] > num[j + 1]) {
+            var temp = num[j]
+            num[j] = num[j + 1]
+            num[j + 1] = temp
+          }
+        }
+      }
+      console.log(num)
+
+      //   选择排序select
+      var num1 = [121, 2131, 43, 454, 1, 777, 2]
+      for (var i = 0; i < num1.length - 1; i++) {
+        var min = num1[i]
+        var minIndex = i
+        for (var j = i + 1; j < num1.length; j++) {
+          if (min > num1[j]) {
+            min = num1[j]
+            minIndex = j
+          }
+        }
+        if (minIndex !== i) {
+          num1[minIndex] = num1[i]
+          num1[i] = min
+        }
+      }
+      console.log(num1)
+    </script>
+  </body>
+</html>

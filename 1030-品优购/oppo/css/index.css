@@ -1,0 +1,268 @@
+.w {
+  width: 1180px;
+  margin: 0 auto;
+}
+body {
+  background-color: #f7f7f7;
+  color: #787b7b;
+}
+.shortcut {
+  width: 100%;
+  height: 28px;
+  background-color: #009b72;
+}
+.shortcut ul {
+  float: right;
+}
+.shortcut ul li {
+  float: left;
+  line-height: 28px;
+  border-left: 1px solid #f2f2f2;
+}
+.shortcut ul li a {
+  padding: 0 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.nav {
+  background-color: #fff;
+  height: 80px;
+}
+.nav .w {
+  height: 100%;
+  position: relative;
+}
+.nav .w .logo h1 a {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 118px;
+  height: 19px;
+  background: url(../imgs/oppologo.png) no-repeat;
+  font-size: 0;
+}
+.nav .w .nav_li {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.nav .w .nav_li ul li {
+  float: left;
+  padding: 0 20px;
+  line-height: 80px;
+  font-size: 15px;
+}
+.nav .w .nav_li ul li a {
+  color: #787b7b;
+}
+.nav .w .nav_li ul li a:hover {
+  color: #3b3b3b;
+  border-bottom: 2px solid #2aae6f;
+}
+.homepage h4 {
+  height: 46px;
+  line-height: 46px;
+  font-size: 14px;
+}
+.homepage .homepage_bd {
+  height: 740px;
+}
+.homepage .homepage_bd .homepage_bd-lf {
+  float: left;
+  margin-right: 10px;
+  width: 770px;
+}
+.homepage .homepage_bd .homepage_bd-lf img {
+  width: 100%;
+  height: 364px;
+}
+.homepage .homepage_bd .homepage_bd-lf img:first-child {
+  margin-bottom: 10px;
+}
+.homepage .homepage_bd .homepage_bd-rt {
+  float: left;
+  width: 396px;
+}
+.homepage .homepage_bd .homepage_bd-rt img {
+  width: 100%;
+}
+.product h4,
+.w h4 {
+  position: relative;
+  height: 64px;
+  line-height: 64px;
+  font-size: 24px;
+  text-align: center;
+  color: #383b3a;
+}
+.product h4::before,
+.w h4::before,
+.product h4::after,
+.w h4::after {
+  content: '';
+  width: 480px;
+  height: 1px;
+  background-color: #ccc;
+}
+.product h4::before,
+.w h4::before {
+  position: absolute;
+  left: 0;
+  top: 55%;
+}
+.product h4::after,
+.w h4::after {
+  position: absolute;
+  right: 0;
+  top: 55%;
+}
+.product p,
+.w p {
+  font-size: 18px;
+}
+.product p span,
+.w p span {
+  color: #333;
+}
+.product .product_bd ul li,
+.w .product_bd ul li {
+  float: left;
+  width: 286px;
+  height: 366px;
+  margin-right: 10px;
+}
+.product .product_bd ul li a,
+.w .product_bd ul li a {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+.product .product_bd ul li a div,
+.w .product_bd ul li a div {
+  width: 150px;
+  height: 180px;
+  margin: 60px auto 30px;
+}
+.product .product_bd ul li a div img,
+.w .product_bd ul li a div img {
+  height: 100%;
+}
+.product .product_bd ul li a h5,
+.w .product_bd ul li a h5 {
+  font-size: 18px;
+  line-height: 45px;
+  color: #333;
+}
+.product .product_bd ul li a span,
+.w .product_bd ul li a span {
+  font-size: 15px;
+}
+.special_bd {
+  margin-bottom: 150px;
+}
+.special_bd div {
+  float: left;
+  width: 582px;
+  height: 300px;
+}
+.special_bd div img {
+  width: 100%;
+}
+.special_bd .special_bd-lf {
+  margin-right: 10px;
+}
+.footer {
+  height: 310px;
+}
+.footer .service {
+  height: 180px;
+  border-bottom: 1px solid #ccc;
+}
+.footer .service div {
+  float: left;
+  width: 225px;
+}
+.footer .service div h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.footer .service div ul li a {
+  font-size: 14px;
+  color: #666;
+  line-height: 25px;
+}
+.footer .service div:last-child {
+  float: right;
+}
+.footer .service div:last-child h3 {
+  float: right;
+  margin-bottom: 20px;
+}
+.footer .service div:last-child ul {
+  float: right;
+}
+.footer .service div:last-child ul li {
+  float: right;
+}
+.footer .service div:last-child ul li a {
+  font-size: 30px;
+}
+.footer .service div:last-child ul li:last-child {
+  font-size: 16px;
+}
+.footer .copyright {
+  padding-top: 22px;
+  font-size: 14px;
+}
+.footer .copyright .copyright-lf {
+  float: left;
+}
+.footer .copyright .copyright-lf a {
+  color: #999;
+}
+.footer .copyright .copyright-lf a::after {
+  display: inline-block;
+  content: '';
+  width: 24px;
+  height: 25px;
+  vertical-align: middle;
+  background: url(../imgs/icon-identification.png) no-repeat;
+}
+.footer .copyright .copyright-lf a:hover::after {
+  background-position: -24px 0;
+}
+.footer .copyright .copyright-rt {
+  float: right;
+  vertical-align: middle;
+}
+.footer .copyright .copyright-rt ul {
+  margin-top: -12px;
+}
+.footer .copyright .copyright-rt ul li {
+  float: left;
+  line-height: 45px;
+}
+.footer .copyright .copyright-rt ul li a {
+  color: #999;
+}
+.footer .copyright .copyright-rt ul li:nth-child(n + 2) {
+  width: 45px;
+  height: 45px;
+}
+.footer .copyright .copyright-rt ul li:nth-child(n + 2) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../imgs/weixin.png) no-repeat;
+}
+.footer .copyright .copyright-rt ul li:nth-child(3) a {
+  background-position: -45px 0;
+}
+.footer .copyright .copyright-rt ul li:nth-child(4) a {
+  background-position: -90px 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 转化为字符串
+      var num = 1000
+      //   var str = num.toString()
+      //   console.log(typeof str)
+      //   注意必须是大写String
+      //   var str1 = String(num)
+      //   console.log(typeof str1)
+      console.log(num)
+      var str2 = '' + num
+      console.log(typeof str2)
+      //转化为Number
+      var str = '0x1234' - 0
+      console.log(str)
+      console.log(typeof str)
+      var num1 = true + 1
+      console.log(num1)
+      var str3 = ''
+      console.log(Boolean(str3))
+      var v = undefined
+      console.log(Boolean(v))
+      //   例题
+      var birth = prompt('请您输入出生年份：')
+      alert(`您今年已经${2020 - birth}岁了`)
+
+      //案例
+      var num1 = -prompt('请输入一个数字：')
+      var num2 = +prompt('请输入一个数字：')
+      var sum = num1 / num2
+      console.log(sum)
+    </script>
+  </body>
+</html>

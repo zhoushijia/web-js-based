@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 字面值创建对象
+      var aLaSiJia = {
+        name: '可可',
+        type: '阿拉斯加',
+        age: 5,
+        color: '棕红色',
+        bark: function () {
+          alert('汪汪汪')
+        },
+        showFilm: function () {
+          alert('我会演电影哦')
+        }
+      }
+      console.log('我叫' + aLaSiJia.name)
+      aLaSiJia.bark()
+      aLaSiJia.showFilm()
+
+      //   new Object()创建对象
+      var mingRen = new Object()
+      mingRen.uname = '漩涡鸣人'
+      mingRen.age = 18
+      mingRen.sex = '男'
+      mingRen.skill = function () {
+        alert(`${this.uname}会影分身术`)
+      }
+      document.write(mingRen.uname)
+      document.write(mingRen['age'])
+      mingRen.skill()
+
+      var zuoZhu = {
+        uname: '佐助',
+        age: 19,
+        sex: true,
+        skill: function () {
+          alert(`${this.uname}会豪火球之术`)
+        }
+      }
+      zuoZhu.skill()
+
+      //   工厂模式
+
+      //   构造函数创建对象
+      function Dog(name, age, color) {
+        this.name = name
+        this.age = age
+        this.color = color
+        this.bark = function () {
+          alert(`${this.name}汪汪汪`)
+        }
+      }
+      var duBin = new Dog('杜宾', 2, 'black')
+      duBin.bark()
+
+      function Star(uname, age, sex) {
+        this.uname = uname
+        this.age = age
+        this.sex = sex
+        this.sing = function () {
+          alert(`${this.uname}一展歌喉`)
+        }
+      }
+
+      var zxy = new Star('张学友', 18, '男')
+      zxy.sing()
+      for (var k in zxy) {
+        console.log(k)
+        console.log(zxy[k])
+      }
+    </script>
+  </body>
+</html>

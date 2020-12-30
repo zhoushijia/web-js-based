@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        perspective: 500px;
+        background-color: #666;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .center {
+        position: relative;
+        margin: 400px auto;
+        width: 192px;
+        height: 108px;
+        background: url(images/timg.jpg) no-repeat center;
+        background-size: 100% 100%;
+        transform-style: preserve-3d;
+        animation: zhuan 12s linear infinite;
+      }
+      .center:hover {
+        animation-play-state: paused;
+      }
+      @keyframes zhuan {
+        0% {
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+      .center div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .center div:nth-child(1) {
+        background: url(images/timg1.jpg) no-repeat center;
+        background-size: 192px 108px;
+        transform: rotateY(0) translateZ(300px);
+      }
+      .center div:nth-child(2) {
+        background: url(images/timg2.jpg) no-repeat center;
+        background-size: 192px 108px;
+
+        transform: rotateY(60deg) translateZ(300px);
+      }
+      .center div:nth-child(3) {
+        background: url(images/timg3.jpg) no-repeat center;
+        background-size: 192px 108px;
+
+        transform: rotateY(120deg) translateZ(300px);
+      }
+      .center div:nth-child(4) {
+        background: url(images/timg4.jpg) no-repeat center;
+        background-size: 192px 108px;
+
+        transform: rotateY(180deg) translateZ(300px);
+      }
+      .center div:nth-child(5) {
+        background: url(images/timg5.jpg) no-repeat center;
+        background-size: 192px 108px;
+
+        transform: rotateY(240deg) translateZ(300px);
+      }
+      .center div:nth-child(6) {
+        background: url(images/timg6.jpg) no-repeat center;
+        background-size: 192px 108px;
+
+        transform: rotateY(300deg) translateZ(300px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

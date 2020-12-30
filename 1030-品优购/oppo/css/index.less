@@ -1,0 +1,290 @@
+// 版心
+.w {
+  width: 1180px;
+  margin: 0 auto;
+}
+body {
+  background-color: #f7f7f7;
+  color: #787b7b;
+}
+// 快捷栏
+.shortcut {
+  width: 100%;
+  height: 28px;
+  background-color: #009b72;
+  ul {
+    float: right;
+    li {
+      float: left;
+      line-height: 28px;
+      border-left: 1px solid #f2f2f2;
+      a {
+        padding: 0 20px;
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+}
+// 导航栏
+.nav {
+  background-color: #fff;
+  height: 80px;
+  .w {
+    height: 100%;
+    position: relative;
+    .logo {
+      h1 {
+        a {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 118px;
+          height: 19px;
+          background: url(../imgs/oppologo.png) no-repeat;
+          font-size: 0;
+        }
+      }
+    }
+    .nav_li {
+      position: absolute;
+      top: 0;
+      right: 0;
+      ul {
+        li {
+          float: left;
+          padding: 0 20px;
+          line-height: 80px;
+          font-size: 15px;
+          a {
+            color: #787b7b;
+            &:hover {
+              color: #3b3b3b;
+              border-bottom: 2px solid #2aae6f;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 首页
+.homepage {
+  h4 {
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+  }
+  .homepage_bd {
+    height: 740px;
+    .homepage_bd-lf {
+      float: left;
+      margin-right: 10px;
+      width: 770px;
+      img {
+        width: 100%;
+        height: 364px;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .homepage_bd-rt {
+      float: left;
+      width: 396px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+// 产品
+.product,
+.w {
+  h4 {
+    position: relative;
+    height: 64px;
+    line-height: 64px;
+    font-size: 24px;
+    text-align: center;
+    color: #383b3a;
+    &::before,
+    &::after {
+      content: '';
+      width: 480px;
+      height: 1px;
+      background-color: #ccc;
+    }
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 55%;
+    }
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 55%;
+    }
+  }
+  p {
+    font-size: 18px;
+    span {
+      color: #333;
+    }
+  }
+  .product_bd {
+    ul {
+      li {
+        float: left;
+        width: 286px;
+        height: 366px;
+        margin-right: 10px;
+        a {
+          overflow: hidden;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          text-align: center;
+          div {
+            width: 150px;
+            height: 180px;
+            margin: 60px auto 30px;
+            img {
+              // width: 100%;
+              height: 100%;
+            }
+          }
+          h5 {
+            font-size: 18px;
+            line-height: 45px;
+            color: #333;
+          }
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+// 产品特色
+.special_bd {
+  margin-bottom: 150px;
+  div {
+    float: left;
+    width: 582px;
+    height: 300px;
+    img {
+      width: 100%;
+    }
+  }
+  .special_bd-lf {
+    margin-right: 10px;
+  }
+}
+// 底部
+.footer {
+  height: 310px;
+  .service {
+    height: 180px;
+    border-bottom: 1px solid #ccc;
+    div {
+      float: left;
+      width: 225px;
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 50px;
+      }
+      ul {
+        li {
+          a {
+            font-size: 14px;
+            color: #666;
+            line-height: 25px;
+          }
+        }
+      }
+      &:last-child {
+        float: right;
+        h3 {
+          float: right;
+          margin-bottom: 20px;
+        }
+        ul {
+          float: right;
+
+          li {
+            float: right;
+            a {
+              font-size: 30px;
+            }
+            &:last-child {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    padding-top: 22px;
+    font-size: 14px;
+
+    .copyright-lf {
+      float: left;
+      a {
+        color: #999;
+        &::after {
+          display: inline-block;
+          content: '';
+          width: 24px;
+          height: 25px;
+          vertical-align: middle;
+          background: url(../imgs/icon-identification.png) no-repeat;
+          // transition: all 0.5s;
+        }
+        &:hover::after {
+          background-position: -24px 0;
+        }
+      }
+    }
+    .copyright-rt {
+      float: right;
+      vertical-align: middle;
+
+      ul {
+        margin-top: -12px;
+        li {
+          float: left;
+          line-height: 45px;
+          a {
+            color: #999;
+          }
+          &:nth-child(n + 2) {
+            width: 45px;
+            height: 45px;
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              background: url(../imgs/weixin.png) no-repeat;
+            }
+          }
+          &:nth-child(3) {
+            a {
+              background-position: -45px 0;
+            }
+          }
+          &:nth-child(4) {
+            a {
+              background-position: -90px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

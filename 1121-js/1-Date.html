@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var time = new Date('2020,5,1')
+      var year = time.getFullYear()
+      var month = time.getMonth() + 1 //    0-11
+      if (month < 10) month = '0' + month
+      var date = time.getDate()
+      if (date < 10) date = '0' + date
+      var day = time.getDay() //  0-6
+      var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+      console.log(`今天是${year}-${month}-${date} ${arr[day]}`)
+
+      function getMyDate() {
+        var myDate = new Date()
+        var year = myDate.getFullYear()
+        var month = zeroFill(myDate.getMonth() + 1)
+        var d = zeroFill(myDate.getDate())
+        var hours = zeroFill(myDate.getHours())
+        var minutes = zeroFill(myDate.getMinutes())
+        var seconds = zeroFill(myDate.getSeconds())
+        return year + '-' + month + '-' + d + ' ' + hours + ':' + minutes + ':' + seconds
+      }
+
+      function zeroFill(m) {
+        return m < 10 ? '0' + m : m
+      }
+
+      console.log(getMyDate())
+    </script>
+  </body>
+</html>

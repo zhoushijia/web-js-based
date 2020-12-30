@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var balance = 100
+      var flag = true
+      do {
+        var active = +prompt('请输入您要进行的操作：\n 1.存钱 \n 2.取钱 \n 3.显示余额 \n 4.退出')
+        switch (active) {
+          case 1:
+            var save = +prompt('请输入您想存入的额度：')
+            balance += save
+            break
+          case 2:
+            var withdraw = +prompt('请输入您想提取的额度：')
+            while (withdraw > balance) {
+              alert('提取金额大于余额！')
+              var withdraw = +prompt('请重新输入您想提取的额度：')
+            }
+            balance -= withdraw
+            break
+          case 3:
+            alert('余额：' + balance)
+            break
+          case 4:
+            flag = false
+            break
+        }
+      } while (flag)
+    </script>
+  </body>
+</html>

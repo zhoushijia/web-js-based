@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var url = 'https://www.baidu.com/s?wd=ecmascript%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&rsv_spt=1&rsv_iqid=0xd9e901c40005e77a&issp=1&f=3&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=ts_2&rsv_sug3=15&rsv_sug1=14&rsv_sug7=100&rsv_sug2=1&rsv_btype=i&prefixsug=%2526gt%253B%2526lt%253BMAscript&rsp=2&inputT=11782&rsv_sug4=12697'
+      var obj = {}
+      var value = url.split('?')[1]
+      var arr = value.split('&')
+      for (var i = 0; i < arr.length; i++) {
+        var temp = arr[i].split('=')
+        obj[temp[0]] = temp[1]
+      }
+      console.log(obj)
+    </script>
+  </body>
+</html>

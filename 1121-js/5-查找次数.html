@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var str = 'avdvavddafdfeegdgadv'
+      var count = 0
+      var index = str.indexOf('v', 0)
+      while (index !== -1) {
+        console.log(index)
+        count++
+        index = str.indexOf('v', index + 1)
+      }
+      console.log('字符v出现的总次数' + count)
+
+      var num = [12, 3535, 1, 2, 4, 6, 10, 4, 4, 4, 5, 4, 4]
+      var index = num.indexOf(4, 0)
+      var count = 0
+      while (true) {
+        if (index === -1) break
+        console.log(index)
+        count++
+        index = num.indexOf(4, index + 1)
+      }
+      console.log('数字4出现的次数是' + count)
+    </script>
+  </body>
+</html>

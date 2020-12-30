@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var str = 'agda.html'
+      var index = str.lastIndexOf('.html')
+      var str1 = str.substring(0, index)
+      console.log(str1)
+
+      var str2 = str.split('.')
+      console.log(str2)
+      var str3 = str.split('')
+      console.log(str3)
+
+      var arr = [1, 2, 3, 4, 1, 1, 2, 1, 1, 2]
+      var index = arr.indexOf(1, 0)
+      var count = 0
+      while (index !== -1) {
+        console.log(index)
+        count++
+        index = arr.indexOf(1, index + 1)
+      }
+      console.log(count)
+
+      var arr = [12, 13, 14, 5, 6, 12, 6, 7, 232, 14, 14, 12, 8]
+      var num = {}
+      for (var i = 0; i < arr.length; i++) {
+        var ch = arr[i] + ''
+        if (num[ch]) {
+          num[ch]++
+        } else {
+          num[ch] = 1
+        }
+      }
+      for (var k in num) {
+        console.log(k, num[k])
+      }
+    </script>
+  </body>
+</html>

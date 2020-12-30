@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 对象练习
+      var obj = new Object()
+      obj.uname = 'Tom'
+      obj.age = 18
+      obj.sex = true
+      obj.dance = function () {
+        alert(`${obj.uname}会跳舞`)
+      }
+      console.log(obj.uname)
+      obj.dance()
+
+      //   练习二
+      //   与数组区别开
+      var obj1 = {
+        uname: 'Tom', //注意逗号  冒号
+        hobby: 'piano',
+        age: 18,
+        play: function () {
+          alert(`${obj1.uname}喜欢抓老鼠`) // 调用变量的时候注意加上对象名.属性
+        }
+      }
+      obj1.play()
+
+      //   练习三
+      function Cat(uname, age, hobby) {
+        this.uname = uname
+        this.age = age
+        this.hobby = hobby
+        this.play = function () {
+          alert(`${this.uname}喜欢抓${this.hobby}`)
+        }
+      }
+      var tom = new Cat('Tom', 18, 'Jerry')
+      tom.play()
+    </script>
+  </body>
+</html>

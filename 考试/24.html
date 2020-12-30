@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 24、统计字符串 'abcoefoxyozzopp' 中每个字符出现的次数。
+      var str = 'abcoefoxyozzopp'
+      var charObj = {}
+      for (var i = 0; i < str.length; i++) {
+        var c = str[i]
+        if (charObj[c]) {
+          charObj[c]++
+        } else {
+          charObj[c] = 1
+        }
+      }
+      for (var k in charObj) {
+        console.log(k, charObj[k])
+      }
+    </script>
+  </body>
+</html>

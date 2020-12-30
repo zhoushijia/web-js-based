@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 判断大小
+      var num1 = prompt('请输入第一个数字：')
+      var num2 = prompt('请输入第二个数字：')
+      if (num1 > num2) {
+        document.write(`${num1}最大`)
+      } else {
+        document.write(`${num2}最大`)
+      }
+      // 是否中奖
+      var str = prompt('请输入你的名字：')
+      if (str === '刘德华') {
+        document.write('你中了5元')
+      } else {
+        document.write('很遗憾，您未中奖')
+      }
+      // 判断是否为闰年
+      var year = +prompt('请输入年份：')
+      if ((year % 4 === 0 && year % 100 != 0) || year % 400 === 0) {
+        document.write('闰年')
+      } else {
+        document.write('平年')
+      }
+      //   判断分数等级
+      var score = prompt('请输入你的分数：')
+      if (score !== '' || score !== null || score < 0 || score > 100) {
+        alert('输入分数不合法')
+      } else if (score >= 90) {
+        alert('A')
+      } else if (score >= 80) {
+        alert('B')
+      } else if (score >= 70) {
+        alert('C')
+      } else if (score >= 60) {
+        alert('D')
+      } else {
+        alert('E')
+      }
+    </script>
+  </body>
+</html>

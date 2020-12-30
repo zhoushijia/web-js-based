@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 水仙花数
+      var unit, decade, hundred, sum //个位，十位，百位，求和
+      for (var i = 100; i < 1000; i++) {
+        unit = i % 10 //个位
+        decade = ((i - unit) / 10) % 10 //十位
+        hundred = parseInt(i / 100) //百位
+        // sum = unit * unit * unit + decade * decade * decade + hundred * hundred * hundred
+        sum = Math.pow(unit, 3) + Math.pow(decade, 3) + Math.pow(hundred, 3)
+        if (i === sum) console.log(i)
+      }
+    </script>
+  </body>
+</html>

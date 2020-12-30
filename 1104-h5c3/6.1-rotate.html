@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        margin: 100px auto;
+        perspective: 500px;
+        transform-style: preserve-3d;
+        transition: all 0.5s;
+      }
+      .front,
+      .back {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: orange;
+        border-radius: 50%;
+        line-height: 400px;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+      }
+      .box .back {
+        background-color: #000;
+        transform: rotateY(180deg);
+        z-index: -1;
+      }
+      .box:hover {
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="front">大帅比</div>
+      <div class="back">大傻逼</div>
+    </div>
+  </body>
+</html>

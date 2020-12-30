@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 求和/平均值
+      var sum = 0
+      var average = 0
+      var num = [122, 213, 241, 111, 546]
+      for (var i = 0; i < num.length; i++) {
+        sum += num[i]
+      }
+      average = sum / num.length
+      console.log(sum, average)
+      //   求最小值
+      var min = num[0]
+      for (var i = 1; i < num.length; i++) {
+        if (min > num[i]) {
+          min = num[i]
+        }
+      }
+      console.log(min)
+      //   数组元素后面加元素后字符串拼接
+      console.log(num.join('/./'))
+
+      //   数组后面增加元素  push()  入栈
+      var num1 = []
+      for (var i = 0; i < 1000; i++) {
+        num1.push(i)
+      }
+      console.log(num1)
+
+      //    找出num中大于20的数
+      var num2 = []
+      //   var j = 0
+      for (var i = 0; i < num.length; i++) {
+        if (num[i] > 200) {
+          //   num2.push(num[i])
+          num2[num2.length] = num[i]
+          //   num2[j++] = num[i]
+        }
+      }
+      console.log(num2)
+
+      //   num数组反转
+      var newArr = []
+      for (var i = num.length - 1; i >= 0; i--) {
+        newArr.push(num[i])
+      }
+      console.log(newArr)
+    </script>
+  </body>
+</html>

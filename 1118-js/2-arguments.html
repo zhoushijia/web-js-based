@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // arguments 只在函数体内有，相当于可变形参
+      function concat() {
+        var str = ''
+        for (var i = 0; i < arguments.length; i++) {
+          str += arguments[i]
+        }
+        return str
+      }
+      console.log(concat('小明', '耀', '瑶瑶', '吃药'))
+    </script>
+  </body>
+</html>

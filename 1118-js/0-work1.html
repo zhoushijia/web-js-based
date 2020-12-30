@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 简易计算器
+      // 计算加减乘除取余
+      function operator(num1, num2, opt) {
+        switch (opt) {
+          case '+':
+            return num1 + num2
+            break
+          case '-':
+            return num1 - num2
+            break
+          case '*':
+            return num1 * num2
+            break
+          case '/':
+            return num1 / num2
+            break
+          case '%':
+            return num1 % num2
+            break
+          default:
+            alert('输入运算符不合法')
+        }
+      }
+      var a = +prompt('请输入第一个数字：')
+      var c = prompt('请输入你要进行的运算，提示："+"、"-"、"*"、"/"、"%" ')
+      var b = +prompt('请输入第二个数字：')
+      var res = operator(a, b, c)
+      document.write(res)
+
+      // 比较最大值
+      function getMax(a, b, c) {
+        return a > b ? (a > c ? a : c) : b > c ? b : c
+      }
+      var num1 = +prompt('请输入第一个数字：')
+      var num2 = +prompt('请输入第二个数字：')
+      var num3 = +prompt('请输入第三个数字：')
+      console.log(getMax(num1, num2, num3))
+
+      // 质数
+      function getPrime(a) {
+        if (a < 2) {
+          alert('输入有误')
+          return
+        }
+        // var flag = true
+        for (var i = 2; i < parseInt(Math.sqrt(a) + 1); i++) {
+          if (a % i === 0) {
+            // flag = false
+            // break
+            return false
+          }
+        }
+        return true
+        // if (flag) {
+        //   return '质数'
+        // } else {
+        //   return '非质数'
+        // }
+      }
+      var prime = +prompt('请输入一个你想核验的数字：')
+      console.log(getPrime(prime))
+
+      //   数组反转
+      function reverseArr(arr) {
+        var newArr = []
+        for (var i = arr.length - 1; i >= 0; i--) {
+          newArr.push(arr[i])
+        }
+        return newArr
+      }
+      var arr = [1, 4, 2, 6, 5]
+      console.log(reverseArr(arr))
+
+      // 数组排序
+      function bubbleSort(arr) {
+        for (var i = 0; i < arr.length - 1; i++) {
+          for (var j = 0; j <= arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+              var temp = arr[j]
+              arr[j] = arr[j + 1]
+              arr[j + 1] = temp
+            }
+          }
+        }
+        return arr
+      }
+      console.log(bubbleSort(arr))
+
+      //   选择排序
+      function selectSort(arr) {
+        var min, minIndex
+        for (var i = 0; i < arr.length - 1; i++) {
+          min = arr[i]
+          minIndex = i
+          for (var j = i + 1; j < arr.length - 1; j++) {
+            if (arr[j] < min) {
+              min = arr[j]
+              minIndex = j
+            }
+          }
+          if (min !== arr[i]) {
+            arr[minIndex] = arr[i]
+            arr[i] = min
+          }
+        }
+        return arr
+      }
+    </script>
+  </body>
+</html>

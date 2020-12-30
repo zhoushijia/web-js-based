@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        margin: 0 auto;
+        width: 500px;
+        height: 25px;
+        border: 1px solid #333;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      tr,
+      td {
+        border: 1px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var str = '白羽发间插,流星腰后挂'
+      var b = 'true'
+      var str1 = '常怀报国志,何处不为家'
+      console.log(str + b + str1)
+      var uname = '鲁班七号'
+      var age = 18
+      var height = 100
+      var str2 = `
+        <table>
+        <tr>
+          <td>姓名</td>
+          <td>年龄</td>
+          <td>身高</td>
+        </tr>
+        <tr>
+          <td>${uname}</td>
+          <td>${age}</td>
+          <td>${height}</td>
+        </tr>
+      </table>
+        `
+      document.write(str2)
+    </script>
+  </body>
+</html>

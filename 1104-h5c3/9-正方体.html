@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: absolute;
+        top: 400px;
+        left: 400px;
+        width: 200px;
+        height: 200px;
+        /* 不是所有3d效果都需要透视来放大的，保证正常尺寸，这里不写透视 */
+        /* perspective: 500px; */
+        transform-style: preserve-3d;
+      }
+      .box div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .box div:nth-child(1) {
+        background-color: skyblue;
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+      .box div:nth-child(2) {
+        background-color: red;
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      .box div:nth-child(3) {
+        background-color: orange;
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+      .box div:nth-child(4) {
+        background-color: purple;
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      .box div:nth-child(5) {
+        background-color: green;
+        transform: translateZ(-100px);
+      }
+      .box div:nth-child(6) {
+        background-color: yellow;
+        transform: translateZ(100px);
+      }
+      .box {
+        transform: rotate3d(1, 1, 0, -45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #666;
+}
+input {
+  outline: none;
+  border: none;
+}
+/* <!-- 头部 --> */
+
+.header {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+}
+.header div {
+  float: left;
+  height: 45px;
+}
+.header div:nth-child(1) {
+  width: 8%;
+  background: url(../images/close.png) no-repeat center;
+  background-size: 10px 10px;
+}
+.header div:nth-child(2) {
+  width: 10%;
+  background: url(../images/logo.png) no-repeat center;
+  background-size: 30px 30px;
+}
+.header div:nth-child(3) {
+  width: 57%;
+}
+.header div:nth-child(4) {
+  width: 25%;
+  background-color: #f12916;
+}
+/* <!-- 头部 --> */
+/* 搜索 */
+.search {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1080px;
+  height: 44px;
+  background-color: #ccc;
+}
+.search_input {
+  overflow: hidden;
+  position: relative;
+  margin: 0 50px;
+  margin-top: 7px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.search_input .search_logo {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 20px;
+  height: 15px;
+  background: url(../images/jd.png) no-repeat;
+  background-size: 20px 15px;
+}
+.search_input .search_logo::after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 0;
+  width: 1px;
+  height: 15px;
+  background-color: #666;
+}
+.search_input .search_fangda {
+  position: absolute;
+  top: 8px;
+  left: 56px;
+  width: 18px;
+  height: 15px;
+  background: url(../images/jd-sprites.png) no-repeat -83px 0;
+  background-size: 200px auto;
+}
+.search_input input {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: calc(100% - 80px);
+  height: 20px;
+}
+.search_lf {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45px;
+  height: 44px;
+}
+.search_lf div {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  width: 20px;
+  height: 18px;
+  background: url(../images/s-btn.png) no-repeat;
+  background-size: 20px 18px;
+}
+.search_rt {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+}
+/* 搜索 */

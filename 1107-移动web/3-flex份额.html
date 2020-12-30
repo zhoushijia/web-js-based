@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        height: 400px;
+        background-color: skyblue;
+      }
+      .box span {
+        flex: 1;
+      }
+      .box span:first-child {
+        background-color: #f00;
+        flex: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+    </div>
+  </body>
+</html>

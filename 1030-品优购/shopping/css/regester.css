@@ -1,0 +1,154 @@
+.reg_hd {
+  height: 82px;
+  border-bottom: 2px solid #b1191a;
+  line-height: 82px;
+}
+.reg_hd .w a img {
+  width: 171px;
+  height: 61px;
+}
+.reg_bd {
+  margin-top: 21px;
+  height: 520px;
+}
+.reg_bd .w {
+  border: 1px solid #333;
+}
+.reg_bd_hd {
+  height: 41px;
+  background-color: #ececec;
+}
+.reg_bd_hd h4 {
+  float: left;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #333;
+  line-height: 41px;
+}
+.reg_bd_hd p {
+  float: right;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+  line-height: 41px;
+}
+.reg_bd_bd {
+  height: 477px;
+  /* 所以给父代加内边距 */
+  padding-left: 313px;
+  padding-top: 53px;
+}
+.reg_bd_bd .msg {
+  width: 550px;
+  height: 368px;
+  /* 会出现塌陷 */
+  /* margin-top: 53px; */
+  /* margin-left: 313px; */
+}
+
+.reg_bd_bd .msg ul li {
+  margin-bottom: 20px;
+  height: 36px;
+  line-height: 36px;
+}
+.reg_bd_bd .msg ul li label {
+  display: inline-block;
+  width: 88px;
+  text-align: right;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.reg_bd_bd .msg ul li input {
+  margin-right: 10px;
+  width: 240px;
+  height: 36px;
+  border: 1px solid #666;
+}
+.reg_bd_bd .msg ul li span {
+  font-size: 12px;
+  color: #df3033;
+}
+.reg_bd_bd .msg ul li .error .error_icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-image: url(../images/error.png);
+}
+.reg_bd_bd .msg ul li .success .success_icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-image: url(../images/success.png);
+}
+.reg_bd_bd .msg ul li:nth-child(3) {
+  position: relative;
+  margin-bottom: 43px;
+  height: 36px;
+  line-height: 36px;
+}
+.reg_bd_bd .msg ul li:nth-child(4) {
+  margin-bottom: 43px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.reg_bd_bd .msg ul li:nth-child(3) div {
+  position: absolute;
+  right: 222px;
+  top: 46px;
+  width: 240px;
+  height: 13px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: right;
+}
+.reg_bd_bd .msg ul li:nth-child(3) div span:nth-child(1) {
+  color: #b3b3b3;
+  margin-right: 9px;
+}
+.reg_bd_bd .msg ul li:nth-child(3) div span:nth-child(n + 2) {
+  display: inline-block;
+  margin: 0 1px;
+  width: 34px;
+  color: #ffffff;
+  text-align: center;
+}
+.reg_bd_bd .msg ul li:nth-child(3) div span:nth-child(2) {
+  background-color: #de1111;
+}
+.reg_bd_bd .msg ul li:nth-child(3) div span:nth-child(3) {
+  background-color: #40b83f;
+}
+.reg_bd_bd .msg ul li:nth-child(3) div span:nth-child(4) {
+  background-color: #f79100;
+}
+.reg_bd_bd .msg ul li:nth-child(5) {
+  margin-left: 88px;
+  height: 15px;
+}
+.reg_bd_bd .msg ul li:nth-child(5) input {
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
+}
+.reg_bd_bd .msg ul li:nth-child(5) a {
+  margin-left: 12px;
+  color: #1ba1e6;
+}
+.reg_bd_bd .msg ul li:nth-child(6) button {
+  margin-left: 90px;
+  width: 200px;
+  height: 34px;
+  background-color: #c81623;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 34px;
+}
+.footer {
+  /* margin-top: 70px; */
+  height: 120px;
+  background-color: #ffffff;
+}

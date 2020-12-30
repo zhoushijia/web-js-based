@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: skyblue;
+        animation-name: move;
+        /* 运动时间 */
+        animation-duration: 2s;
+        /* 运动速度 */
+        animation-timing-function: linear;
+        /* 延迟时间 */
+        animation-delay: 1s;
+        /* 运动次数 */
+        animation-iteration-count: infinite;
+        /* 反向 */
+        animation-direction: alternate;
+        /* 最后停留位置 */
+        animation-fill-mode: forwards;
+        /* 合写 */
+        /* animation: move 1s ease 0.4s 1 alternate forwards; */
+      }
+      @keyframes move {
+        from {
+        }
+        to {
+          transform: translateY(400px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

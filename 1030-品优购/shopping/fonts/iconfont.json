@@ -1,0 +1,44 @@
+{
+  "id": "2169299",
+  "name": "web58",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "481508",
+      "name": "刷新 终结版",
+      "font_class": "shuaxinzhongjieban",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "959111",
+      "name": "下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "356472",
+      "name": "时钟",
+      "font_class": "shizhong",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "425649",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "7524619",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e770",
+      "unicode_decimal": 59248
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 创建对象
+      // 方法一
+      var computer = {
+        color: 'red',
+        weight: 100,
+        type: 'thinkpad',
+        num: 111,
+        movie: function () {
+          console.log('我在看电影')
+        },
+        music: function () {
+          console.log('我在听音乐')
+        },
+        playGame: function () {
+          console.log('我在打游戏')
+        },
+        writeCode: function () {
+          console.log('我在敲代码')
+        }
+      }
+      computer.movie()
+
+      //   方式二
+      var cpt = new Object()
+      cpt.color = 'red'
+      cpt.weight = 100
+      cpt.type = 'thinkpad'
+      cpt.num = 111
+      cpt.movie = function () {
+        alert('我在看电影')
+      }
+      cpt.music = function () {
+        alert('我在听音乐')
+      }
+      cpt.playGame = function () {
+        console.log('我在打游戏')
+      }
+      cpt.writeCode = function () {
+        console.log('我在敲代码')
+      }
+
+      //   方式三
+      function Computer(color, weight, type, num) {
+        this.color = color
+        this.weight = weight
+        this.type = type
+        this.num = num
+        this.movie = function () {
+          alert('我在看电影')
+        }
+        this.music = function () {
+          alert('我在听音乐')
+        }
+        this.playGame = function () {
+          console.log('我在打游戏')
+        }
+        this.writeCode = function () {
+          console.log('我在敲代码')
+        }
+      }
+      var c = new Computer('blue', 50, 'apple', 110)
+      for (var k in c) {
+        console.log(k, c[k])
+      }
+    </script>
+  </body>
+</html>

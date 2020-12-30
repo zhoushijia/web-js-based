@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 三元表达式嵌套
+      var num1 = 10
+      var num2 = 20
+      var num3 = 30
+      //最外层num1与num2比较大小，
+      //num1大则进入表达式1：num1 > num3 ? num1 : num3  再进行num1与num3的比较
+      // num2大则进入表达式2：num2 > num3 ? num2 : num3  再进行num2与num3的比较
+      var res = num1 > num2 ? (num1 > num3 ? num1 : num3) : num2 > num3 ? num2 : num3
+      console.log(res)
+    </script>
+  </body>
+</html>

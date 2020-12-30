@@ -1,0 +1,125 @@
+/* seckill */
+.seckill {
+  position: absolute;
+  top: 40px;
+  left: 185px;
+  width: 70px;
+  height: 32px;
+  border-left: 1px solid #c81523;
+  background: url(../images/seckill.png) no-repeat right center;
+}
+/* seckill */
+/* 秒杀导航栏 */
+.sk_nav {
+  height: 47px;
+  border-bottom: 2px solid #b1191a;
+}
+.sk_nav_hd {
+  float: left;
+  height: 45px;
+}
+.sk_nav_hd ul li {
+  float: left;
+}
+.sk_nav_hd ul li a {
+  padding: 0 28px;
+  line-height: 45px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.sk_nav_bd {
+  float: left;
+  height: 45px;
+}
+.sk_nav_bd ul li {
+  float: left;
+}
+.sk_nav_bd ul li a {
+  padding: 0 20px;
+  line-height: 45px;
+  font-size: 14px;
+}
+/* 秒杀导航栏 */
+
+/* 秒杀内容 */
+.container_hd {
+  height: 120px;
+  margin-bottom: 20px;
+}
+.container_bd ul li {
+  float: left;
+  width: 290px;
+  height: 460px;
+  margin-right: 10px;
+}
+.container_bd ul li:hover {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.container_bd ul li div img {
+  width: 283px;
+  height: 290px;
+}
+.container_bd ul li .bd {
+  height: 120px;
+}
+.container_bd ul li .bd p:nth-child(1) {
+  padding-left: 13px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.container_bd ul li .bd p:nth-child(2) {
+  margin-left: 13px;
+  margin-bottom: 13px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container_bd ul li .bd p:nth-child(2) span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a4a4a4;
+  text-decoration: line-through;
+}
+.container_bd ul li .sell {
+  height: 14px;
+  line-height: 14px;
+}
+.container_bd ul li .sell > div {
+  float: left;
+  font-size: 14px;
+}
+.container_bd ul li .sell div:first-child {
+  margin-left: 15px;
+  margin-right: 12px;
+}
+.container_bd ul li .sell div:nth-child(2) {
+  margin: 1px 0;
+  margin-right: 11px;
+  width: 132px;
+  height: 12px;
+  border: 1px solid #c81623;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.container_bd ul li .sell div:nth-child(2) h5 {
+  width: 30%;
+  height: 12px;
+  background-color: #c81623;
+  transition: width 1s;
+}
+.container_bd ul li .sell div:nth-child(2):hover h5 {
+  width: 100%;
+}
+.container_bd ul li .ft:last-child a {
+  display: block;
+  width: 290px;
+  height: 50px;
+  background-color: #c81623;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* 秒杀内容 */
